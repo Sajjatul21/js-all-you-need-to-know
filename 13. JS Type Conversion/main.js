@@ -12,3 +12,20 @@ console.log(n.toString())
 
 console.log(String(Infinity))
 console.log(Boolean(-Infinity))
+
+// Falsy value
+
+'' //empty string
+0
+null
+undefined
+NaN
+
+console.log(Boolean(''))
+console.log(Boolean('dsdasd'))
+console.log(Boolean(0))
+console.log(Boolean(null))
+console.log(Boolean(undefined))
+console.log(Boolean(NaN))
+console.log(Boolean(45))
+console.log(Boolean(-45))
