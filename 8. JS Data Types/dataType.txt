@@ -2,7 +2,7 @@
 
     1. Number (1,2,3,6.7)
     2. String ("This is text")
-    3. Boolen (True or False)
+    3. Boolean (True or False)
     4. undefined
     5. null
 
