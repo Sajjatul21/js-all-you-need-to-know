@@ -7,4 +7,6 @@ console.log(a % b);
 //  Pre incremental
 console.log(++a)
 
-
+// Post incremental
+console.log(a++)
+console.log(a)
