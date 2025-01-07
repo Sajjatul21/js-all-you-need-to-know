@@ -29,3 +29,10 @@ console.log(Boolean(undefined))
 console.log(Boolean(NaN))
 console.log(Boolean(45))
 console.log(Boolean(-45))
+
+
+// boolean to string 
+console.log(true)
+
+var x = true
+console.log(x.toString())
