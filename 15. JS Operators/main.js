@@ -8,5 +8,5 @@ console.log(a % b);
 console.log(++a)
 
 // Post incremental
-console.log(a++)
+console.log(a++)   //post increment: First the output will show then increase
 console.log(a)
