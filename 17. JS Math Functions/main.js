@@ -19,3 +19,7 @@ console.log(Math.pow(3,5))
 
 console.log(Math.sqrt(9)) // nine square root
 console.log(Math.sqrt(64))
+
+console.log(Math.random())
+
+console.log(Math.round(Math.random()*50 + 1));
