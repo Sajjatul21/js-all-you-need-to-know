@@ -14,3 +14,12 @@ console.log(fullName);
 var name = '';
 var fullName = name || "Shihab";
 console.log(fullName);
+
+var isOk = true
+// var isOk = false
+
+/* if(isOk){
+    console.log("Everything is Ok")
+} */
+
+isOk&& console.log("Everything is Ok")
