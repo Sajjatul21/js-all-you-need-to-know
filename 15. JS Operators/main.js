@@ -10,3 +10,10 @@ console.log(++a)
 // Post incremental
 console.log(a++)   //post increment: First the output will show then increase
 console.log(a)
+
+// Pre Decrement 
+console.log(--b)
+
+// Post Decrement
+console.log(b--)
+console.log(b)
