@@ -1,0 +1,6 @@
+what is String?
+
+In JavaScript, a string is a data type used to represent a sequence of characters. Strings are used to handle and manipulate text-based data in programming.
+
+Key Characteristics of Strings in JavaScript:
+Enclosed in Quotes: A string is created by enclosing characters within either single quotes ('), double quotes ("), or backticks (` for template literals).
