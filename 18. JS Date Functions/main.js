@@ -1,14 +1,14 @@
-var date = new Date()
+var date = new Date();
 
-console.log(date)
-console.log(date.toDateString())
-console.log(date.toTimeString())
-console.log(date.toLocaleString())
+console.log(date);
+console.log(date.toDateString());
+console.log(date.toTimeString());
+console.log(date.toLocaleString());
 
 
-console.log("full year",date.getFullYear())
-console.log("month",date.getMonth())
-console.log("date",date.getDate())
-console.log("hour",date.getHours())
-console.log("minute",date.getMinutes())
-console.log("second",date.getSeconds())
+console.log("full year", date.getFullYear());
+console.log("month", date.getMonth());
+console.log("date", date.getDate());
+console.log("hour", date.getHours());
+console.log("minute", date.getMinutes());
+console.log("second", date.getSeconds());
