@@ -15,3 +15,22 @@ for (var i = 1; i <= n; i++) {
     }
     console.log(result);
 }
+
+
+// another challenge
+
+//* * * * *
+//* * * * *
+//* * * * *
+//* * * * *
+//* * * * *
+
+var n = 5;
+for (var i = 1; i<=n; i++){
+    var result = ''
+    for(var j = 1;j<=n;j++){
+        // console.log(j)
+        result += "* "
+    }
+    console.log(result)
+}
