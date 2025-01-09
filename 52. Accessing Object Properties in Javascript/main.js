@@ -38,3 +38,14 @@ var person1 = {
 };
 
 console.log(person1["fast Name"]);
+
+// array notation এর ক্ষেত্রে  আমাদের property গুলাকে string আকারে দিতে হবে । ্বা আমরা যদি ভেরিয়েবলের মাধ্যমে ও অ্যাক্সেক করতে চাই তাহলে সেটার ক্ষেত্রেও ভেরিয়েবলের মান টা স্ট্রিং হতে হবে।
+
+var point = {
+    a: 100, 
+    b: 200
+}
+console.log(point['a'])
+
+var show = 'b'
+console.log(point[show])
