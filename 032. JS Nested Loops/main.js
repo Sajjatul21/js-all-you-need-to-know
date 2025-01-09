@@ -26,7 +26,7 @@ for (var i = 1; i <= n; i++) {
 //* * * * *
 
 var n = 5;
-for (var i = 1; i<=n; i++){
+for (var i = 1; i<=n; i++){k
     var result = ''
     for(var j = 1;j<=n;j++){
         // console.log(j)
