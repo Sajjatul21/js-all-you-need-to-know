@@ -20,3 +20,9 @@ function sum(a, b) {
 }
 var result = sample(8, 5, sum);
 console.log(result);
+
+var result2 = sample(8, 5, function (c, d) {
+    /*     console.log(c, d);  //var c = a + b; var d = a - b;*/
+    return c - d;
+});
+console.log(result2);
