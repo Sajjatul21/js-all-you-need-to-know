@@ -24,3 +24,18 @@ function outer() {
 
 const closureExample = outer(); // outer() returns inner() function
 closureExample(); // Logs: "I am from outer function"
+
+
+// run this code on chrome consol 
+
+function closure() {
+    var x = 5;
+
+    return function () {
+        console.log(x);
+    };
+}
+
+var abc = closure();
+console.dir(abc);
+// abc()
