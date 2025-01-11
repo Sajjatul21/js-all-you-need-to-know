@@ -26,3 +26,13 @@ var result2 = sample(8, 5, function (c, d) {
     return c - d;
 });
 console.log(result2);
+
+var result3 = sample(8, 9, function (c, d) {
+    return c * d;
+});
+console.log(result3);
+
+var result4 = sample(8, 3, function (c, d) {
+    return c / d;
+});
+console.log(result4);
