@@ -5,7 +5,12 @@ function sample(a, b) {
     var c = a + b;
     var d = a - b;
 
-    var sum = c + d;
-    console.log(sum)
+    var result = sum(c, d);
+    return result;
 }
-sample(8, 5);
+
+function sum(a, b) {
+    return a + b;
+}
+var result =sample(8, 5);
+console.log(result)
