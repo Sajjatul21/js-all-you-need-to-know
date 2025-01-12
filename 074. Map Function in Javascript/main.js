@@ -25,3 +25,15 @@ var sqrArr = arr.map(function (value, index, arr) {
 });
 console.log(arr);
 console.log(sqrArr);
+
+function map(arr) {
+    var newArray = [];
+    for (var i = 0; i < arr.length; i++) {
+        // console.log(arr[i]);
+        var temp = arr[i] * arr[i];
+        newArray.push(temp);
+    }
+    return newArray
+}
+
+console.log(map(arr));
