@@ -17,7 +17,10 @@ function display(some) {
 
 function calculator(num1, num2, callback) {
     let sum = num1 + num2;
-    callback(sum);
+    if (callback) callback(sum);
+    return sum
 }
 
 calculator(5, 5, display);
+var result = calculator(5, 5);
+console.log(result)
