@@ -22,11 +22,11 @@ var sum = 0;
 function forEach(arr, callback) {
     for (var i = 0; i < arr.length; i++) {
         // console.log(arr[i]);
-        callback(arr[i]);
+        callback(arr[i],i,arr);
     }
 }
-forEach(arr, function (value) {
-    // console.log(value);
+forEach(arr, function (value,index, arr) {
+    console.log(value,index, arr);
     sum += value;
 });
 console.log(sum)
