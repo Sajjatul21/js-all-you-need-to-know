@@ -17,8 +17,7 @@ function display(some) {
 
 function calculator(num1, num2) {
     let sum = num1 + num2;
-    return sum;
+    display(sum);
 }
 
-let result = calculator(5, 5);
-display(result);
+calculator(5, 5);
