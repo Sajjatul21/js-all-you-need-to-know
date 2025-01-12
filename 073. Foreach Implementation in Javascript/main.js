@@ -18,7 +18,7 @@ arr.forEach(function (value, index, arr) {
 console.log(sum) */
 
 var arr = [1, 2, 3, 4, 5];
-
+var sum = 0;
 function forEach(arr, callback) {
     for (var i = 0; i < arr.length; i++) {
         // console.log(arr[i]);
@@ -26,5 +26,7 @@ function forEach(arr, callback) {
     }
 }
 forEach(arr, function (value) {
-    console.log(value);
+    // console.log(value);
+    sum += value;
 });
+console.log(sum)
