@@ -11,16 +11,18 @@ A callback function can run after another function has finished
 // https://www.youtube.com/watch?v=0eSG3_mvFZY
 
 
-function display(some) {
+/* function display(some) {
     console.log(some);
-}
+} */
 
 function calculator(num1, num2, callback) {
     let sum = num1 + num2;
     if (callback) callback(sum);
-    return sum
+
 }
 
-calculator(5, 5, display);
-var result = calculator(5, 5);
-console.log(result)
+// calculator(5, 5, display);
+calculator(5, 5, function (result) {
+    console.log(result);
+});
+
