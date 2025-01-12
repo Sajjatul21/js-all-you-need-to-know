@@ -29,15 +29,19 @@ var filterArr = arr.filter(function (value) {
 console.log(filterArr);
 
 
-function filter(arr) {
+function filter(arr, callback) {
     var newArr = [];
 
     for (var i = 0; i < arr.length; i++) {
-        if (arr[i] % 2 == 0) {
+        if (callback(arr[i], i, arr)) {
             newArr.push(arr[i]);
         }
     }
     return newArr;
 }
-var odd = filter(arr);
-console.log(odd);
+var myFilter = filter(arr, function (value, index, arr) {
+    // return value % 2 == 0;
+    // return value % 2 == 1;
+    return value > 4;
+});
+console.log(myFilter);
