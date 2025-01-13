@@ -33,16 +33,32 @@ arr.sort(function (a, b) {
 });
 console.log(arr);
 
-persons.sort(function(a,b){
-    if(a.age>b.age){
-        return 1
+persons.sort(function (a, b) {
+    if (a.age > b.age) {
+        return 1;
     }
-    else if(a.age<b.age){
-        return -1
+    else if (a.age < b.age) {
+        return -1;
     }
-    else{
-        return 0
+    else {
+        return 0;
     }
-})
+});
 
-console.log(persons)
+console.log(persons);
+
+
+/*  In JavaScript, the every() method is used to determine whether all elements in an array satisfy a
+  specified condition implemented by a provided function. It returns true if the callback function returns
+  a truthy value for every array element; otherwise, it returns false. */
+var arr1 = [5, 4, 3, 8, 1, 7, 6, 5, 7, 2];
+
+var res1 = arr1.every(function (value) {
+    return value % 2 == 0;
+});
+console.log(res1);
+
+var res2 = arr1.every(function (value) {
+    return value >= 0;
+});
+console.log(res2);
