@@ -62,3 +62,20 @@ var res2 = arr1.every(function (value) {
     return value >= 0;
 });
 console.log(res2);
+
+/* In JavaScript, the some() method is used to determine whether at least one element in an array 
+satisfies a provided testing function. It returns true if such an element is found; otherwise, it returns false. 
+This method does not modify the original array. */
+
+var arr2 = [5, 4, 3, 8, 1, 7, 6, 5, 7, -2];
+
+var res3 = arr2.some(function(value){
+    return value % 2 ==1 
+})
+console.log(res3)
+
+var res4 = arr2.some(function(value){
+    return value < 0
+})
+
+console.log(res4)
