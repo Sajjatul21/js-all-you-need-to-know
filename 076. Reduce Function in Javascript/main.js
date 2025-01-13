@@ -20,3 +20,30 @@ var max = arr.reduce(function (previousValue, currentValue) {
     return Math.max(previousValue, currentValue);
 }, 0);
 console.log(max);
+
+
+
+function reduce(arr, callback, acc) {
+
+    for (var i = 0; i < arr.length; i++) {
+
+        acc = callback(acc, arr[i]);
+    }
+    return acc;
+}
+
+var sum1 = reduce(arr, function (previousValue, currentValue) {
+    return previousValue + currentValue;
+}, 0);
+
+var max = reduce(arr, function (pre, curr) {
+    return Math.max(pre, curr);
+}, arr[0]);
+
+var min = reduce(arr, function (pre, curr) {
+    return Math.min(pre, curr);
+}, arr[0]);
+
+console.log(sum1);
+console.log(max);
+console.log(min);
