@@ -43,3 +43,6 @@ console.log("I am Global");
 /* In JavaScript, the execution context refers to the environment in which code is executed. Each execution context operates in two distinct phases:
 1.Creation Phase:
 2.Execution Phase: */
+
+//learn execution context
+// https://academy.vivasoftltd.com/javascript-bootcamp/fundamentals/execution-context/
