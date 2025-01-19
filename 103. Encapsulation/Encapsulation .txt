@@ -1,0 +1,7 @@
+
+What is  Encapsulation? 
+
+Encapsulation is one of the fundamental concepts in object programming(OPP).It descries the idea of bundling data and
+methods that work on that data within one unit.
+
+Encapsulation: Property and Method কে এক যায়গায়  bind করাই হচ্ছে Encapsulation।
