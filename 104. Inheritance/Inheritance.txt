@@ -1,0 +1,7 @@
+
+What is Inheritance?
+
+Inheritance is one of the core concepts of object-oriented programming (OOP) languages. It is a mechanism where you can to
+ drive a class from another class for hierarchy of classes that share a set of attributes and method.
+ 
+ Inheritance মানে হচ্ছে  অন্যের বৈশিষ্ট নিজের মধ্যে ধারন করা । এবং এর মাধ্যমে  code duplication এড়িয়ে চলা।
