@@ -1,0 +1,9 @@
+What is Polymorphism?
+
+The word Polymorphism is use in various context and describes situations in which something occurs in several different forms.\
+ In computer science, it describes the conceptt that object of different types can be accessed through the same interface. 
+ Each type can provide its own, independent implementation of this interface. It is oe of the core concepts of 
+ object-oriented programming (OPP).
+
+ Polymorphism: এটি object বা একই বিষয়ে অনেক চেহারে। একেক টা ফাংশানালিটিতে একেক রকম কাজ করে। poly মানে হচ্ছে অনেক আর morphism মানে
+ হচ্ছে চেহারা।
