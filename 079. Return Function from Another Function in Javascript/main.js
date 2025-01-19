@@ -33,4 +33,4 @@ console.log(base10(2));  //2^10=1,024
 var base5 = base(5);
 console.log(base5(2));
 console.log(base5(3));
-console.log(base5(5));
+console.log(base5(5 ));

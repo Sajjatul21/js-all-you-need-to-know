@@ -44,5 +44,5 @@ console.log("I am Global");
 1.Creation Phase:
 2.Execution Phase: */
 
-//learn execution context
+//learn execution context 
 // https://academy.vivasoftltd.com/javascript-bootcamp/fundamentals/execution-context/
