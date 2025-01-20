@@ -31,3 +31,12 @@ var rect = {
 
 rect.draw();
 
+// this এর মান execution context এর execution phase এর নিয়ে থাকে।
+
+var another = {
+    width: 47,
+    height: 56,
+    print: rect.printProperties
+};
+
+another.print();
