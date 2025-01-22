@@ -20,7 +20,7 @@ var Rectangle = function (width, height) {
 function test() {
     console.log("Something");
 }
-
+console.log(test.name, test.length);
 
 var Rect = new Function('width', 'height', `
     this.width = width;
