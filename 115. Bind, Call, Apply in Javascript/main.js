@@ -29,4 +29,6 @@ myFunc() */
 testBind() */
 
 var testBind = myFunc.bind({ a: 5, b: 4 });
-testBind(10, 10); 
+testBind(10, 10);
+
+// follow this link: https://www.notion.so/115-Bind-Call-Apply-in-Javascript-80eea80c74af4431ac2eeee58600272a
