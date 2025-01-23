@@ -11,10 +11,22 @@ function myFunc(c, d) {
 }
 // myFunc();
 
-// call 
+// call
 /* myFunc.call({})
 myFunc() */
 // myFunc.call({ a: 10, b: 20 });
 
 // apply
-myFunc.apply({ a: 10, b: 20 }, [40, 50]);
+// myFunc.apply({ a: 10, b: 20 }, [40, 50]);
+
+
+//bind
+// bind don't call a function  instantly
+// myFunc.bind({a:7,b: 4},5,6)
+
+
+/* var testBind = myFunc.bind({a: 5, b:4},10,10)
+testBind() */
+
+var testBind = myFunc.bind({ a: 5, b: 4 });
+testBind(10, 10); 
