@@ -5,13 +5,16 @@
 */
 // একাটা function যখন different object share করে তখন আমরা  call, apply, bind use করব।
 
-function myFunc() {
-    console.log(this)
-    console.log(this.a + this.b); //a এবং b-এর মান window object নাই তাই তাদের মান undefine আসছে । undefine undefine যোগ করলে আসবে।
+function myFunc(c, d) {
+    console.log(this);
+    console.log(this.a + this.b + c + d); //a এবং b-এর মান window object নাই তাই তাদের মান undefine আসছে । undefine undefine যোগ করলে আসবে।
 }
-myFunc();
+// myFunc();
 
 // call 
 /* myFunc.call({})
 myFunc() */
-myFunc.call({a:10, b: 20})
+// myFunc.call({ a: 10, b: 20 });
+
+// apply
+myFunc.apply({ a: 10, b: 20 }, [40, 50]);
