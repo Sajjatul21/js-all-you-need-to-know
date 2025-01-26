@@ -22,6 +22,8 @@ function test() {
 }
 console.log(test.name, test.length);
 
+
+
 var Rect = new Function('width', 'height', `
     this.width = width;
     this.height = height;
@@ -42,3 +44,5 @@ var Rect = new Function('width', 'height', `
 var rect = new Rect(4, 5);
 console.log(rect);
 rect.draw();
+
+//https://www.notion.so/114-Functions-Are-Object-in-Javascript-1839ad76272380e2b7c0deb9e777e6c1
