@@ -11,6 +11,11 @@ var Rectangle = function (width, height) {
         console.log('my width is ' + this.width);
         console.log("my height is " + this.height);
     }.bind(this);
+
+    this.getPosition = function () {
+        return position;
+    };
+
     this.draw = function () {
         console.log("I am rectangle");
         printProperties();
@@ -20,4 +25,5 @@ var Rectangle = function (width, height) {
 
 var rect = new Rectangle(20, 10);
 rect.draw();
+console.log(rect.getPosition())
 
