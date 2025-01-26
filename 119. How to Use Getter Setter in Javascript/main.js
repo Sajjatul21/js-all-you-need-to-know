@@ -15,6 +15,9 @@ var Rectangle = function (width, height) {
     Object.defineProperty(this, 'position', {
         get: function () {
             return position;
+        },
+        set: function (value) {
+            position = value;
         }
     });
 
@@ -27,4 +30,8 @@ var Rectangle = function (width, height) {
 
 var rect = new Rectangle(20, 10);
 rect.draw();
+rect.position = {
+    x: 777,
+    y: 999
+};
 console.log(rect.position);
