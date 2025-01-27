@@ -17,7 +17,24 @@ console.log(Object.keys(person));
 /* var descriptor = Object.getOwnPropertyDescriptor(person,'name')
 console.log(descriptor) */
 
-var baseObj = Object.getPrototypeOf(person)
+/* var baseObj = Object.getPrototypeOf(person)
 // console.log(baseObj)
 var descriptor = Object.getOwnPropertyDescriptor(baseObj,'toString')
-console.log(descriptor)
+console.log(descriptor) */
+
+Object.defineProperty(person, 'name', {
+    configurable: false,
+    enumerable: false,
+    writable: false,
+});
+
+// configurable
+console.log(delete person.name);
+
+// enumerable
+console.log(Object.keys(person));
+
+// writeable
+person.name = "sajjatul islam";
+console.log(person)
+console.log(person.name)
