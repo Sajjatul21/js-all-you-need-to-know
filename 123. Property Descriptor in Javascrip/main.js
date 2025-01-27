@@ -38,3 +38,5 @@ console.log(Object.keys(person));
 person.name = "sajjatul islam";
 console.log(person)
 console.log(person.name)
+
+//https://www.notion.so/123-Property-Descriptor-in-Javascript-1889ad76272380a7ba52db928eab8bc2
