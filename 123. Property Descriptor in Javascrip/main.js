@@ -11,3 +11,8 @@ for (var i in person) {
 }
 
 console.log(Object.keys(person));
+
+// property descriptor is an object 
+
+var descriptor = Object.getOwnPropertyDescriptor(person,'name')
+console.log(descriptor)
