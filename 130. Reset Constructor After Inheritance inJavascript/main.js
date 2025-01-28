@@ -21,11 +21,3 @@ var shape = new Shape();
 console.log(sqr);
 console.log(shape);
 
-
-function Circle() {
-
-}
-Circle.prototype = Object.create(Shape.prototype);
-
-var circle = new Circle();
-console.log(circle);
