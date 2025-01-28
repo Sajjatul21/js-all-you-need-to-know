@@ -10,11 +10,17 @@ Shape.prototype = {
 function Square(width) {
     this.width = width;
 }
-// Object.create(Shape.prototype);
+
 Square.prototype = Object.create(Shape.prototype);
 Square.prototype.draw = function () {
     console.log("Drawing");
 };
+
+Square.prototype = {
+    test: function(){
+        
+    }
+}
 
 var sqr = new Square(45);
 var shape = new Shape();
