@@ -1,3 +1,7 @@
+function extend(child, parent) {
+    child.prototype = Object.create(parent.prototype);
+    child.prototype.constructor = child;
+}
 function Shape(color) {
     this.color = color;
 
@@ -11,8 +15,7 @@ function Square(width, color) {
     this.width = width;
 }
 
-Square.prototype = Object.create(Shape.prototype);
-Square.prototype.constructor = Square;
+extend(Square,Shape)
 Square.prototype.draw = function () {
     console.log("Drawing");
 };
@@ -26,8 +29,6 @@ function Circle(radius, color) {
     Shape.call(this, color);
     this.radius = radius;
 }
-Circle.prototype = Object.create(Shape.prototype);
-Circle.prototype.constructor = Circle;
-
+extend(Circle,Shape)
 var c = new Circle(5, 'red');
 console.log(c);
