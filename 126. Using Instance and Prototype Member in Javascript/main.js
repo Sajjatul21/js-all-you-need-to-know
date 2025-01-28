@@ -3,13 +3,14 @@ function Square(width) {
     this.width = width;
     this.getWidth = function () {
         console.log('Width is ' + this.width);
-        this.draw();// using prototype members
+        
     };
 
 };
 
 Square.prototype = {
     draw: function () {
+        this.getWidth()
         console.log("Draw");
     },
     // method overwrite 
@@ -18,4 +19,4 @@ Square.prototype = {
     }
 };
 var sqr1 = new Square(5);
-console.log(sqr1.getWidth())
+console.log(sqr1.draw())
