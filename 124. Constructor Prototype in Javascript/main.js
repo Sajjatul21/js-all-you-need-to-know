@@ -10,5 +10,15 @@ var p2 = new Person("Shihab");
 console.log(p1);
 console.log(p2);
 
+var arr = [];
+// console.log(arr)
+// console.log(arr.__proto__)
+// console.log(Array.prototype)
+Array.prototype.myMethod = function () {
+    console.log("My name is Shihab");
+};
 
+console.log(arr);
 
+var anotherArr = [];
+console.log(anotherArr);
