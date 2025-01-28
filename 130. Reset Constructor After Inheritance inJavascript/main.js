@@ -1,10 +1,8 @@
 function Shape() {
 
 }
-Shape.prototype = {
-    common: function () {
-        console.log("I am common function");
-    }
+Shape.prototype.common = function () {
+    console.log("I am common function");
 };
 
 function Square(width) {
@@ -16,11 +14,7 @@ Square.prototype.draw = function () {
     console.log("Drawing");
 };
 
-Square.prototype = {
-    test: function(){
-        
-    }
-}
+
 
 var sqr = new Square(45);
 var shape = new Shape();
