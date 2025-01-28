@@ -15,7 +15,7 @@ function Square(width, color) {
     this.width = width;
 }
 
-extend(Square,Shape)
+extend(Square, Shape);
 Square.prototype.draw = function () {
     console.log("Drawing");
 };
@@ -23,12 +23,16 @@ Square.prototype.draw = function () {
 
 
 var sqr = new Square(45, "green");
-console.log(sqr);
+// console.log(sqr);
 
 function Circle(radius, color) {
     Shape.call(this, color);
     this.radius = radius;
 }
-extend(Circle,Shape)
+extend(Circle, Shape);
 var c = new Circle(5, 'red');
-console.log(c);
+// console.log(c.common());
+Circle.prototype.common = function () {
+    console.log("I am Calling from Circle and I have Overriding");
+};
+console.log(c.common())
