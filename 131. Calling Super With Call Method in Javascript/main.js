@@ -7,7 +7,9 @@ Shape.prototype.common = function () {
 };
 
 function Square(width, color) {
-    Shape(color);
+    // Shape(color);
+    // new Shape(color); not working
+    Shape.call(this, color);
     this.width = width;
 }
 
