@@ -33,6 +33,9 @@ extend(Circle, Shape);
 var c = new Circle(5, 'red');
 // console.log(c.common());
 Circle.prototype.common = function () {
+    Shape.prototype.common.call(this)
     console.log("I am Calling from Circle and I have Overriding");
 };
 console.log(c.common())
+
+console.log(sqr.common());
