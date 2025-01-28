@@ -2,12 +2,13 @@ function Person(name) {
     this.name = name;
 }
 
+Person.prototype.PI = 3.1416; // set pi on constructor prototype. prototype is an object
+
 var p1 = new Person("Sajjatul Islam");
-console.log(Object.getPrototypeOf(p1))
-// console.log(p1.__proto__)  // deprecated
+var p2 = new Person("Shihab");
+
+console.log(p1);
+console.log(p2);
 
 
-// the other way of get  object prototype using constructor  
-console.log(Person.prototype)
 
-console.log(Object.getPrototypeOf(p1)== Person.prototype)
