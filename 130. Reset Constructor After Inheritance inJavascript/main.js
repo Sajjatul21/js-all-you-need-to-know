@@ -10,6 +10,7 @@ function Square(width) {
 }
 
 Square.prototype = Object.create(Shape.prototype);
+Square.prototype.constructor = Square;
 Square.prototype.draw = function () {
     console.log("Drawing");
 };
