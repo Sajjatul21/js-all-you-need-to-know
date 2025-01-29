@@ -51,9 +51,3 @@ for (var i of shapes) {
     i.common();
 }
 
-console.log(c instanceof Circle);
-console.log(c instanceof Shape);
-console.log(c instanceof Square);
-console.log(sqr instanceof Square);
-console.log(sqr instanceof Shape);
-console.log(sqr instanceof Circle);
