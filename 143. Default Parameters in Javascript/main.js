@@ -3,7 +3,8 @@ function sqr(n = 1) {
 }
 console.log(sqr());
 
-function greet (name, msg){
-        console.log(`${msg}! ${name}`)
+function greet(name = "Sajjatul", msg) {
+        console.log(name.length);
+        console.log(`${msg}! ${name}`);
 }
-greet("Shihab","Hello")
+greet(null, "Hello");
