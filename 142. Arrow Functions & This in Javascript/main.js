@@ -7,8 +7,8 @@ testMe();
 
 let obj = {
         name: "Shihab",
-        print: function () {
-                console.log(this);// this refer obj object
+        print: ()=> {
+                console.log(this);
         }
 };
 obj.print();
