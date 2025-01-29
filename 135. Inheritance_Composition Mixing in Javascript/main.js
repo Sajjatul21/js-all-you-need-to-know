@@ -2,6 +2,10 @@
     Composition হলো এমন একটি পদ্ধতি যেখানে বিভিন্ন অবজেক্টের 
     ফাংশনালিটি বা বৈশিষ্ট্যগুলো একত্রিত করে নতুন অবজেক্ট তৈরি করা হয়।
 */
+function mixing(target, ...sources) {
+    // Object.assign(Person.prototype, canWalk, canEat);
+    Object.assign(target, ...sources);
+}
 var canWalk = {
     walk: function () {
         console.log("walking...");
@@ -22,6 +26,6 @@ console.log(person.eat()); */
 function Person(name) {
     this.name = name;
 }
-Object.assign(Person.prototype, canWalk, canEat);
+mixing(Person.prototype, canWalk, canEat);
 var person = new Person("Sajjatul Islam");
 console.log(person);
