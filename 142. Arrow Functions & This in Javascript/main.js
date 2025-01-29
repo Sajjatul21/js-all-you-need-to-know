@@ -8,10 +8,10 @@ function testMe() {
 let obj = {
         name: "Shihab",
         print: function () {
-                setTimeout(function () {
-                        console.log(self);
+                setTimeout(() => {
+                        console.log(this);
                         console.log(`Hello ${this.name}`);
-                }.bind(this), 1000);
+                }, 1000);
         }
 };
 obj.print();
