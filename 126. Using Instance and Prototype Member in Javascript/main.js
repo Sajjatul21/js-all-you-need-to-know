@@ -13,7 +13,6 @@ Square.prototype = {
         this.getWidth()
         console.log("Draw");
     },
-    // method overwrite 
     toString: function () {
         return 'My width is ' + this.width;
     }
