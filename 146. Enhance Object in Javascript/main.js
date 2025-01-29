@@ -1,11 +1,16 @@
 let a = 10, b = 20;
 
 var obj = {
-    /*
-     a: a,
-     b: b 
-    */
+
     a,
-    b
+    b,
+    /*
+     print: function(){
+        console.log(this)
+    } 
+    */
+    print() {
+        console.log(this);
+    }
 };
-console.log(obj);
+obj.print();
