@@ -18,6 +18,12 @@ var canEat = {
     }
 };
 
+var canSwim = {
+    swim: function () {
+        console.log('Swimming..');
+    }
+};
+
 /* var person = Object.assign({}, canWalk, canEat);
 person.name = "Sajjatul Islam";
 console.log(person);
@@ -29,3 +35,11 @@ function Person(name) {
 mixing(Person.prototype, canWalk, canEat);
 var person = new Person("Sajjatul Islam");
 console.log(person);
+
+function GoldFish(name) {
+    this.name = name;
+}
+
+mixing(GoldFish.prototype, canEat, canSwim);
+var fish = new GoldFish("Oranda");
+console.log(fish);
