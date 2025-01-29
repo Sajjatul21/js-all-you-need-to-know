@@ -14,7 +14,14 @@ var canEat = {
     }
 };
 
-var person = Object.assign({}, canWalk, canEat);
+/* var person = Object.assign({}, canWalk, canEat);
 person.name = "Sajjatul Islam";
 console.log(person);
-console.log(person.eat());
+console.log(person.eat()); */
+
+function Person(name) {
+    this.name = name;
+}
+Object.assign(Person.prototype, canWalk, canEat);
+var person = new Person("Sajjatul Islam");
+console.log(person);
