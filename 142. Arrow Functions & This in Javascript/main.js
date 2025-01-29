@@ -7,8 +7,10 @@ testMe();
 
 let obj = {
         name: "Shihab",
-        print: ()=> {
-                console.log(this);
+        print: function () {
+                setTimeout(function () {
+                        console.log(`Hello ${this.name}`);
+                }, 1000);
         }
 };
 obj.print();
