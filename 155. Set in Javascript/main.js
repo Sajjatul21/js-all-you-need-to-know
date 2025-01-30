@@ -39,3 +39,5 @@ console.log(isIterable(set));
 for(let v of set){
     console.log(v)
 }
+
+console.log(set.entries())
