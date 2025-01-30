@@ -28,3 +28,14 @@ console.log(keyIterate.next());
 
 let valueIterate = set.values();
 console.log(valueIterate.next());
+
+
+
+function isIterable(obj) {
+    return typeof obj[Symbol.iterator] == 'function';
+}
+console.log(isIterable(set));
+
+for(let v of set){
+    console.log(v)
+}
