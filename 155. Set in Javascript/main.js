@@ -12,5 +12,10 @@ set.add(4)
 set.add(5)
 set.add(1)
 set.add(2)
+/* console.log(set)
+console.log(set.size) */
+
+// set.clear()
+// set.delete(5)
+// console.log(set.has(4))
 console.log(set)
-console.log(set.size)
