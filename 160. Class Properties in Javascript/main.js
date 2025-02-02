@@ -4,6 +4,10 @@ class Rectangle {
         this.width = width;
         this.height = height;
     }
+    name = "Shihab"
+    test = function(){
+        
+    }
     draw() {
         console.log(this);
         console.log("Drawing");
