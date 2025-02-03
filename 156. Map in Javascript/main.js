@@ -19,7 +19,7 @@ console.log(map.values());
 console.log(map.entries());
 
 
-for (let [key, value] of map) {
+for (let [key, value] of map) { 
     console.log(key, value);
 }
 
