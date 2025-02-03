@@ -1,5 +1,5 @@
 /*
- যখ ন আমরা normal function call করি তখন সে window object কে refer করে । আমরা
+ যখন আমরা normal function call করি তখন সে window object কে refer করে । আমরা
  বলে দিতে পারি call, apply, bind এর মাধ্যমে তুমি window object refer না করে আমাদের
  দেওয়া object কে refer করো।
 */
