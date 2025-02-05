@@ -1,12 +1,15 @@
 class Shape {
+    constructor(color) {
+        this.color = color;
+    }
     draw() {
         console.log("Drawing...");
     }
 }
 
 class Rectangle extends Shape {
-    constructor(width, height) {
-        super();
+    constructor(color, width, height) {
+        super(color);
         this.width = width;
         this.height = height;
     }
@@ -14,5 +17,7 @@ class Rectangle extends Shape {
         return this.width * this.height;
     }
 }
-let r = new Rectangle(4, 3);
+let r = new Rectangle("Green", 4, 3);
 console.log(r);
+r.draw();
+console.log(r.color);
