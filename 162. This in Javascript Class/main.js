@@ -1,3 +1,4 @@
+'use strict'
 function Shape() {
     this.draw = function () {
         console.log(this);
