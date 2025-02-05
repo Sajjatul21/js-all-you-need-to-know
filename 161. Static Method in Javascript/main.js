@@ -19,6 +19,13 @@ class User {
         this.name = name;
         this.age = age;
     }
+    //Static Method(Factory Method)
+    static CreateAdmin() {
+        return new User("Sajjatul", 22);
+    }
 }
-const user1 = new User("Sajjatul", 22);
-console.log(user1);
+/* const user1 = new User("Sajjatul", 22);
+console.log(user1); */
+
+const admin = User.CreateAdmin();
+console.log(admin);
