@@ -12,7 +12,7 @@ class Circle {
 
     }
 
-    getRadius() {
+    get radius() {
         return _radius.get(this);
     }
 
@@ -25,4 +25,4 @@ class Circle {
 let c1 = new Circle(2, "Cred");
 /* console.log(c1);
 c1.draw(); */
-console.log(c1.getRadius());
+console.log(c1.radius);
