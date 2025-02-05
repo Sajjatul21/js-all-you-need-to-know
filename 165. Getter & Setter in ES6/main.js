@@ -15,7 +15,9 @@ class Circle {
     get radius() {
         return _radius.get(this);
     }
-
+    set radius(v) {
+        _radius.set(this,v);
+    }
     draw() {
         console.log('Drawing...');
         console.log(_radius.get(this), _name.get(this));
@@ -25,4 +27,5 @@ class Circle {
 let c1 = new Circle(2, "Cred");
 /* console.log(c1);
 c1.draw(); */
+c1.radius = 100;
 console.log(c1.radius);
