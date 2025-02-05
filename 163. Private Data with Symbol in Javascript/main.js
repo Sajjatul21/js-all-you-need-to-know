@@ -1,6 +1,6 @@
 const _radius = Symbol();
 const _name = Symbol();
-const _draw = Symbol()
+const _draw = Symbol();
 class Circle {
     constructor(radius, name) {
         this[_radius] = radius; // funny way to privet value
@@ -8,7 +8,7 @@ class Circle {
 
     }
     [_draw]() {
-        console.log('Drawing...');
+        console.log('Drawing...'); // computed value use only  this body means under circle body, not outside
     }
 }
 let c1 = new Circle(2, "Cred");
