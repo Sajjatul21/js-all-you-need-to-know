@@ -1,12 +1,13 @@
 const _radius = Symbol();
 const _name = Symbol();
+const _draw = Symbol()
 class Circle {
     constructor(radius, name) {
         this[_radius] = radius; // funny way to privet value
         this[_name] = name;
 
     }
-    draw() {
+    [_draw]() {
         console.log('Drawing...');
     }
 }
