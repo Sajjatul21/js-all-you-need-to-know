@@ -4,5 +4,6 @@ function Shape() {
     };
 }
 
-let s1 = new Shape()
-s1.draw()
+let s1 = new Shape();
+var anotherDraw = s1.draw;
+anotherDraw();
