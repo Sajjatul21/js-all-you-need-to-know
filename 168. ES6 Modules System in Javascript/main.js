@@ -5,10 +5,8 @@ console.log(r);
 r.draw();
 console.log(r.color); */
 
-import * as func from './func.js';
-console.log(func);
+import { add, div } from './func.js';
 
-console.log(func.add(2, 2));
-console.log(func.sub(5, 2));
-console.log(func.times(7, 2));
-console.log(func.div(18, 2));
+
+console.log(add(2, 2));
+console.log(div(18, 2));
