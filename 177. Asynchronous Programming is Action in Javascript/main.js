@@ -12,3 +12,19 @@ setTimeout(() => {
     console.log("Step 2: Processing...");
 }, 2000);
 console.log("Step 3: End");
+
+
+console.log("I am Line one");
+setTimeout(() => {
+    console.log("I am Line two");
+}, 3000);
+
+setTimeout(() => {
+    console.log("I am Line three");
+}, 0);
+
+console.log("I am Line four");
+
+setTimeout(() => {
+    console.log("I am Line five");
+}, 1000);
