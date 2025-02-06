@@ -1,3 +1,4 @@
+import Shape from "./Shape";
 class Rectangle extends Shape {
     constructor(color, width, height) {
         super(color);
@@ -11,3 +12,4 @@ class Rectangle extends Shape {
         return this.width * this.height;
     }
 }
+export default Rectangle;

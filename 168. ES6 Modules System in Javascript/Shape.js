@@ -6,3 +6,4 @@ class Shape {
         console.log("Drawing...");
     }
 }
+export default Shape;
