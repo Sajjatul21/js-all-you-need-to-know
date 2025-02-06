@@ -13,6 +13,9 @@ class Rectangle extends Shape {
         this.width = width;
         this.height = height;
     }
+    draw() {
+        console.log("Drawing a Rectangle...");
+    }
     calculate() {
         return this.width * this.height;
     }
