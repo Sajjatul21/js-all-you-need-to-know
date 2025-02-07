@@ -1,0 +1,77 @@
+Call Stack হলো JavaScript-এর একটি গুরুত্বপূর্ণ ডাটা স্ট্রাকচার যা ফাংশনগুলোর এক্সিকিউশন কন্টেক্সট (execution context) ট্র্যাক করতে ব্যবহৃত হয়।
+এটি ফাংশন কলগুলিকে ম্যানেজ করে এবং নির্ধারণ করে কোন ফাংশন বর্তমানে এক্সিকিউট হচ্ছে এবং কোন ফাংশনগুলি এর পর এক্সিকিউট হবে।  
+এটি Last In, First Out (LIFO) পদ্ধতি অনুসরণ করে, অর্থাৎ, সর্বশেষে যে ফাংশনটি কল করা হয়েছে, সেটিই প্রথমে সম্পন্ন হবে।
+
+---
+
+### কিভাবে কাজ করে?
+
+1. ফাংশন কল:  
+   যখন কোনো ফাংশন কল করা হয়, তখন তার execution context তৈরি হয়ে call stack-এর উপরে পুশ করা হয়।  
+   উদাহরণস্বরূপ:
+   ```js
+   function greet() {
+     console.log("Hello!");
+   }
+
+   function sayHello() {
+     greet();  // greet() কল হলে, এর execution context stack-এর উপরে যোগ হয়।
+     console.log("Welcome!");
+   }
+
+   sayHello(); // sayHello() কল হলে, এর execution context প্রথমে stack-এ যোগ হয়।
+   ```
+
+
+2. এক্সিকিউশন:  
+   call stack-এর উপরের ফাংশনটি প্রথমে এক্সিকিউট হয়। যখন একটি ফাংশন এক্সিকিউট হয়ে যায়, তখন তার execution context call stack থেকে পপ (remove) হয়ে যায়।
+
+
+3. ফাংশন শেষ হওয়া:
+   ফাংশনটি সম্পূর্ণভাবে এক্সিকিউট হওয়ার পর, তার execution context সরিয়ে ফেলা হয় যাতে control পূর্বের ফাংশনে ফিরে যায়।
+
+---
+
+### উদাহরণ:
+
+ধরা যাক, নিচের কোডটি:
+
+```js
+function first() {
+  console.log("First");
+}
+
+function second() {
+  first();      // এখানে 'first' ফাংশন কল হলে তার context stack-এ পুশ হবে।
+  console.log("Second");
+}
+
+function third() {
+  second();     // এখানে 'second' ফাংশন কল হলে তার context stack-এ পুশ হবে।
+  console.log("Third");
+}
+
+third();        // প্রথমে 'third' ফাংশন কল হবে।
+```
+
+এক্সিকিউশন স্টেপ:
+
+1. third() কল করা হয় → `third()` এর execution context call stack-এর উপরে পুশ হয়।
+2. third() এর ভিতরে second() কল করা হয় → `second()` এর execution context call stack-এর উপরে পুশ হয়।
+3. second() এর ভিতরে first() কল করা হয় → `first()` এর execution context call stack-এর উপরে পুশ হয়।
+4. first() ফাংশনটি `console.log("First")` এক্সিকিউট করে → "First" প্রিন্ট হয়, তারপর `first()` শেষ হয়ে পপ হয়।
+5. ফিরে যায় second() এ → এখন `console.log("Second")` এক্সিকিউট হয় → "Second" প্রিন্ট হয়, তারপর `second()` পপ হয়।
+6. ফিরে যায় third() এ → এখন `console.log("Third")` এক্সিকিউট হয় → "Third" প্রিন্ট হয়, তারপর `third()` পপ হয়।
+
+এইভাবে, call stack ফাংশনগুলোর এক্সিকিউশন অর্ডার এবং তাদের রিটান কন্টেক্সট ট্র্যাক করে।
+
+---
+
+ সংক্ষেপে:
+
+- Call Stack হল একটি LIFO ডাটা স্ট্রাকচার যা ফাংশন কল ও এক্সিকিউশন কন্টেক্সট ম্যানেজ করে।
+- ফাংশন কল করার সময় তার execution context স্ট্যাকে পুশ হয় এবং সম্পূর্ণ হলে পপ হয়।
+- JavaScript-এর সিঙ্ক্রোনাস (synchronous) এক্সিকিউশন মডেলটি এই call stack-এর মাধ্যমে নিয়ন্ত্রিত হয়।
+
+
+
