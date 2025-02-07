@@ -15,7 +15,7 @@ let p2 = Promise.reject('reject');  ///instead create a promise . reject the val
 p2.catch(e => console.log(e));
 
  */
-let p1 = Promise.resolve('One');
+/* let p1 = Promise.resolve('One');
 let p2 = Promise.resolve('Two');
 let p3 = Promise.resolve('Three');
 
@@ -23,4 +23,19 @@ let promiseArr = [p1, p2, p3];
 Promise.all(promiseArr)
     .then(arr => {
         console.log(arr);
-    });
+    }); */
+
+let p1 = new Promise(resolve => {
+    setTimeout(resolve, 5000, 'One');
+});
+let p2 = new Promise(resolve => {
+    setTimeout(resolve, 3000, 'two');
+});
+
+let p3 = new Promise(resolve => {
+    setTimeout(resolve, 400, 'Three');
+});
+
+let promiseArr = [p1, p2, p3];
+Promise.all(promiseArr)
+    .then(arr => console.log(arr));
