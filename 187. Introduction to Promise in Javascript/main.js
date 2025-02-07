@@ -1,17 +1,24 @@
-let p1 = new Promise((resolve, reject) => {
-    setTimeout(resolve, 5000, 'one');
-});
+function getIphone(isPassed) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            if (isPassed) {
+                resolve("I have got an iPhone");
+            }
+            else {
+                reject(new Error("You got Failed"));
+            }
+        }, 2000);
+    });
+}
+/* console.log(getIphone(true));
+console.log(getIphone(false)); */
 
-let p2 = new Promise((resolve, reject) => {
-    setTimeout(resolve, 3000, 'tow');
-});
-
-p1.then(v => {
-    console.log(v);
-});
-
-p2.then(v => {
-    console.log(v);
-}).catch(e => {
-    console.log(e);
-});
+getIphone(false)
+    // getIphone(true)
+    .then((res) => {
+        console.log(res);
+    })
+    .catch((e) => {
+        console.log(e);
+        console.log(e.message);
+    });
