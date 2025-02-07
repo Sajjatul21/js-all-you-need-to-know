@@ -1,0 +1,12 @@
+handle asynchronous task
+
+there are mainly three way
+    1. call back
+    2. promise
+    3. async function
+
+
+handle collection on async operation
+    1. async iterator 
+    2. for await of loop
+    3. async generator
