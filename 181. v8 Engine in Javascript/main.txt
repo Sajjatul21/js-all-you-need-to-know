@@ -1,0 +1,15 @@
+What is v8 engine?
+    v8 is google's open source high-performance javascript and webAssembly engine. Written in C++
+
+What does it Means?
+    v8 is a c++ program, which receives javascript code, compile, and executes it
+
+what does v8 do?
+    1. compile and executes javascript code 
+    2. handling call stack
+    3. handling heap memory and allocate memory fo rvariables
+    4. collect garbage = release memory which is no longer necessary
+
+What does v8 do not do?
+    1. document object model- don't know anything about it
+    2. multiple v8 engine never share variables or context
