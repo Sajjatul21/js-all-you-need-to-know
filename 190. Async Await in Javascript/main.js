@@ -17,5 +17,6 @@ async function myAsyncFunc() {
     // p1.then(v=>console.log(v))
     let v = await p1;
     console.log("test");
+    console.log(v);
 }
 myAsyncFunc();
