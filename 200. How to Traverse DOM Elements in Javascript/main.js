@@ -10,3 +10,6 @@ console.log(children);
 // console.log(list.previousSibling)
 console.log(list.previousElementSibling);
 console.log(list.nextElementSibling);
+
+let li = document.querySelector('li');
+console.log(li.nextElementSibling);
