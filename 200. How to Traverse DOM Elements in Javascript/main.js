@@ -13,3 +13,7 @@ console.log(list.nextElementSibling);
 
 let li = document.querySelector('li');
 console.log(li.nextElementSibling);
+
+// console.log(list.firstChild) // give us any node
+console.log(list.firstElementChild);
+console.log(list.lastElementChild);
