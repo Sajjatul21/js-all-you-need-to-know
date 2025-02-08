@@ -10,7 +10,7 @@ async function test() {
 // console.log(test());
 test().then(v => console.log(v)); */
 
-let p1 = new Promise(resolve => {
+/* let p1 = new Promise(resolve => {
     setTimeout(resolve, 3000, 'Test value');
 });
 async function myAsyncFunc() {
@@ -19,4 +19,15 @@ async function myAsyncFunc() {
     console.log("test");
     console.log(v);
 }
-myAsyncFunc();
+myAsyncFunc(); */
+
+
+async function fetchDate() {
+    let res = await fetch('https://jsonplaceholder.typicode.com/users');
+    // console.log(res);
+    // console.log(res.json());
+    let data = await res.json();
+    console.log(data);
+
+}
+fetchDate();
