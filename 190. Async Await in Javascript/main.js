@@ -23,11 +23,14 @@ myAsyncFunc(); */
 
 
 async function fetchDate() {
-    let res = await fetch('https://jsonplaceholder.typicode.com/users');
-    // console.log(res);
-    // console.log(res.json());
-    let data = await res.json();
-    console.log(data);
-
+    try {
+        let res = await fetch('https://jsonplaceholder.typicode.com/users');
+        let data = await res.json();
+        let names = data.map(u => u.name);
+        console.log(names);
+    }
+    catch (e) {
+        console.log(e.message);
+    }
 }
 fetchDate();
