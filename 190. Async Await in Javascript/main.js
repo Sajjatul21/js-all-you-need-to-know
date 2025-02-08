@@ -7,4 +7,5 @@ console.log(myPromise()); */
 async function test() {
     return 'test';
 }
-console.log(test());
+// console.log(test());
+test().then(v => console.log(v));
