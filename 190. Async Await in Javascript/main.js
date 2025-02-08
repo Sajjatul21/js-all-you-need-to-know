@@ -1,4 +1,10 @@
-function myPromise(){
-    return Promise.resolve('Test Value')
+/* function myPromise() {
+    return Promise.resolve('Test Value');
 }
-console.log(myPromise())
+console.log(myPromise()); */
+
+
+async function test() {
+    return 'test';
+}
+console.log(test());
