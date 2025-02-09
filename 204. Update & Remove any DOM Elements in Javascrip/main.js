@@ -31,6 +31,7 @@ list.insertAdjacentElement('beforeend', div);
 let firstChild = list.firstElementChild;
 setTimeout(() => {
     firstChild.innerHTML = firstChild.innerHTML + " (Modified)";
+    firstChild.classList.add("text-success");
 }, 5000);
 
 setTimeout(() => {
