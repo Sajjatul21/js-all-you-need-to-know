@@ -20,5 +20,10 @@ let p2 = createElement('p', 'lead', 'Ipsum dolor sit amet consectetur adipisicin
 let div = createElement('div');
 append(div, [p1, p2]);
 
-let container = document.getElementById('cont');
-container.appendChild(div);
+/* let container = document.getElementById('cont');
+container.appendChild(div); */
+
+// list.insertAdjacentElement('beforebegin', div);
+// list.insertAdjacentElement('afterbegin', div);
+// list.insertAdjacentElement('beforeend', div);
+list.insertAdjacentElement('afterend', div);
