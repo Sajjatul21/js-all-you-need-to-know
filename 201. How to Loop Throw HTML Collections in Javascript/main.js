@@ -1,6 +1,11 @@
 let listitem = document.getElementsByTagName('li');
 
-let listitems = Array.from(listitem);  //Array.from() হল একটি বিল্ট-ইন জাভাস্ক্রিপ্ট মেথড, যা যেকোনো ইটারেবল (iterable) অথবা অ্যারে-লাইক (array-like) অবজেক্টকে একটি নতুন অ্যারে তে রূপান্তর করে
+// let listitems = Array.from(listitem);  //Array.from() হল একটি বিল্ট-ইন জাভাস্ক্রিপ্ট মেথড, যা যেকোনো ইটারেবল (iterable) অথবা অ্যারে-লাইক (array-like) অবজেক্টকে একটি নতুন অ্যারে তে রূপান্তর করে
+/* let listitems = Array.prototype.slice.apply(listitem);
+console.log(listitems); */
+
+let listitems = [...listitem];
+// console.log(listitems);
 
 listitems.forEach((i, index) => {
     // console.log(i, index);
