@@ -25,4 +25,13 @@ setTimeout(() => {
 
 let lastItem = list.lastElementChild.cloneNode(true);
 lastItem.innerHTML = 'Five';
-list.append(lastItem); 
+list.append(lastItem);
+
+
+console.log(list.attributes);
+console.log(list.getAttributeNames())
+console.log(list.getAttributeNode('id'))
+console.log(list.getAttributeNode('class'))
+console.log(list.id)
+console.log(list.className)
+console.log(list.classList)
