@@ -32,6 +32,7 @@ let firstChild = list.firstElementChild;
 setTimeout(() => {
     firstChild.innerHTML = firstChild.innerHTML + " (Modified)";
     firstChild.classList.add("text-success");
+    firstChild.style.background = '#DAF7A6'
 }, 5000);
 
 setTimeout(() => {
