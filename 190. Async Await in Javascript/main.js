@@ -22,7 +22,7 @@ async function myAsyncFunc() {
 myAsyncFunc(); */
 
 
-async function fetchDate() {
+/* async function fetchDate() {
     try {
         let res = await fetch('https://jsonplaceholder.typicode.com/users');
         let data = await res.json();
@@ -33,4 +33,15 @@ async function fetchDate() {
         console.log(e.message);
     }
 }
-fetchDate();
+fetchDate(); */
+
+let promises = [Promise.resolve(1), Promise.resolve(2), Promise.resolve(3)];
+
+async function promiseAll() {
+    /* let result = Promise.all(promises)
+        .then(v => console.log(v)); */
+        let result = await Promise.all(promises)
+        console.log(result)
+}
+
+promiseAll()

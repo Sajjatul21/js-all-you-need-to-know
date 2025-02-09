@@ -21,17 +21,24 @@ getRequest('https://jsonplaceholder.typicode.com/users', function (error, respon
         console.log(error);
     }
     else {
-        console.log(response);
+        // console.log(response);
+        response.forEach(res => {
+            console.log(res);
+        });
     }
 });
 
 // another request 
 
-getRequest('https://jsonplaceholder.typicode.com/posts',function(err, res){
-    if(err){
-        console.log(err)
+getRequest('https://jsonplaceholder.typicode.com/posts', function (err, res) {
+    if (err) {
+        console.log(err);
     }
-    else{
-        console.log(res)
+    else {
+        // console.log(res)
+        res.forEach(function (r) {
+            console.log(r.title);
+            // console.log(r["title"]);
+        });
     }
-})
+});
