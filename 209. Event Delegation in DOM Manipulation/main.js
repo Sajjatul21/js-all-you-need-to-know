@@ -8,12 +8,17 @@ btn.addEventListener("click", function (e) {
 });
 
 /* event delegation problem */
-// console.log(list.children)
-[...list.children].forEach(li => {
+/* [...list.children].forEach(li => {
     li.onclick = function (e) {
-        // console.log(e.target);
         e.target.remove();
     };
+}); */
+
+list.addEventListener('click', function (e) {
+    // console.log(this.contains(e.target));
+    if (this.contains(e.target)) {
+        e.target.remove();
+    }
 });
 
 let box = document.getElementById("box");
