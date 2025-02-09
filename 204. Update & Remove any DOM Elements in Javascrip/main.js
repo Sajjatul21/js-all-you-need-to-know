@@ -27,3 +27,8 @@ container.appendChild(div); */
 // list.insertAdjacentElement('afterbegin', div);
 // list.insertAdjacentElement('beforeend', div);
 list.insertAdjacentElement('afterend', div);
+
+let firstChild = list.firstElementChild;
+setTimeout(() => {
+    firstChild.innerHTML = firstChild.innerHTML + " (Modified)";
+}, 5000);
