@@ -10,14 +10,29 @@ name.addEventListener('keypress', function (event) {
 });
 
 let skills = document.getElementsByName('skills');
-
+let parent = document.getElementById('result');
 let checkedSkilled = [];
 
 [...skills].forEach(skill =>
     skill.addEventListener('change', function (event) {
         if (event.target.checked) {
             checkedSkilled.push(event.target.value);
-            console.log(checkedSkilled);
+            outputSkills(parent, checkedSkilled);
+        }
+        else {
+            let ind = checkedSkilled.indexOf(event.target.value);
+            checkedSkilled.splice(ind, 1);
+            outputSkills(parent, checkedSkilled);
         }
     })
 );
+
+function outputSkills(parent, skills) {
+    console.log(parent, skills);
+    let result = '';
+    skills.forEach((skill, index) => {
+        result += `(${index + 1}) ${skill} `;
+    });
+    parent.innerHTML = result;
+}
+
