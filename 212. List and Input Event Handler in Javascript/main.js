@@ -37,13 +37,20 @@ function outputSkills(parent, skills) {
 }
 
 let list = document.getElementById('list');
-// console.log(list);
 list.addEventListener('dblclick', function (event) {
-    // console.log(this);
-    // console.log(event.target);
     if (this.contains(event.target)) {
         let innerText = event.target.innerText;
-        console.log(innerText);
         event.target.innerHTML = '';
+        let inputBox = createInputBox(innerText);
+        event.target.appendChild(inputBox);
     }
 });
+
+function createInputBox(value) {
+    let inp = document.createElement("input");
+    inp.type = 'text';
+    inp.className = 'from-control';
+    inp.value = value;
+
+    return inp;
+}
