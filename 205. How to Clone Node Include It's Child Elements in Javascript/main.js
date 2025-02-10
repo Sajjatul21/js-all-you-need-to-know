@@ -33,4 +33,4 @@ setTimeout(() => {
 
 let lastItem = list.lastElementChild.cloneNode(true);
 // lastItem.innerHTML = 'Five';
-list.append(lastItem);
+list.append(lastItem); 
