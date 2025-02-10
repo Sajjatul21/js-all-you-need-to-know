@@ -36,3 +36,14 @@ function outputSkills(parent, skills) {
     parent.innerHTML = result;
 }
 
+let list = document.getElementById('list');
+// console.log(list);
+list.addEventListener('dblclick', function (event) {
+    // console.log(this);
+    // console.log(event.target);
+    if (this.contains(event.target)) {
+        let innerText = event.target.innerText;
+        console.log(innerText);
+        event.target.innerHTML = '';
+    }
+});
