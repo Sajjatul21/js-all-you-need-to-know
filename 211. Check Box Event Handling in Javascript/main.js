@@ -10,11 +10,14 @@ name.addEventListener('keypress', function (event) {
 });
 
 let skills = document.getElementsByName('skills');
-// console.log(skills)
+
+let checkedSkilled = [];
+
 [...skills].forEach(skill =>
-    // console.log(skill)
     skill.addEventListener('change', function (event) {
-        // console.log(event);
-        console.log(event.target.checked)
+        if (event.target.checked) {
+            checkedSkilled.push(event.target.value);
+            console.log(checkedSkilled);
+        }
     })
 );
