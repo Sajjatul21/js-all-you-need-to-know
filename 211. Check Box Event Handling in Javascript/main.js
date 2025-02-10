@@ -1,4 +1,4 @@
- let name = document.getElementById('name');
+let name = document.getElementById('name');
 // console.log(name);
 name.addEventListener('keypress', function (event) {
     // console.log(event);
@@ -8,3 +8,13 @@ name.addEventListener('keypress', function (event) {
         event.target.value = '';
     }
 });
+
+let skills = document.getElementsByName('skills');
+// console.log(skills)
+[...skills].forEach(skill =>
+    // console.log(skill)
+    skill.addEventListener('change', function (event) {
+        // console.log(event);
+        console.log(event.target.checked)
+    })
+);
