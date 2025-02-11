@@ -1,0 +1,10 @@
+Learn:
+    1. Cannas
+    2. SVG
+    3. Drag and Drop    
+    4. Transition   
+    5. Location
+    6. Audio, video
+    7. Speech Recognition
+    8. Web Socket
+    9. Local Storage, Cookies and Database
