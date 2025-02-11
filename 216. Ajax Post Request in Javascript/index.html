@@ -10,10 +10,20 @@
 </head>
 
 <body>
+    <div class="container">
 
-    <div class="container" id="cont">
-        <button id="load" class="btn btn-primary my-5">Load Post</button>
-        <ul id="posts" class="list-group"></ul>
+        <form id="post-form">
+            <label><strong>Please Fill The Form</strong></label>
+            <div class="form-group mb">
+                <label for="title">Please Provide a Title</label>
+                <input type="text" id="title" name="title" class="form-control" placeholder="Enter Title">
+            </div>
+            <div class="from-group my-4">
+                <label for="body">Please Provide a Description</label>
+                <textarea class="form-control" name="body" id="body" cols="30" rows="10"></textarea>
+            </div>
+            <input type="submit" value="Submit" class="btn btn-primary">
+        </form>
     </div>
 
 
