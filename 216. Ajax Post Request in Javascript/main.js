@@ -22,12 +22,24 @@ postForm.addEventListener('submit', function (e) {
             body: JSON.stringify(postObj)
         })
             .then(response => response.json())
-            .then(data => {
-                console.log(data);
+            .then(post => {
+                let item = listItemGenerator(post);
+                posts.appendChild(item);
+                this.reset();
             })
+
             .catch(e => console.log(e.message));
     }
     else {
         alert("Please provide Every Details");
     }
 });
+
+function listItemGenerator(item) {
+    let li = document.createElement('li');
+    li.className = 'list-group-item';
+    li.innerHTML = `<p>${item.id}. ${item.title} by user Id: ${item.userId}</p> \n
+    <p>${item.body}</p>`;
+
+    return li;
+}
