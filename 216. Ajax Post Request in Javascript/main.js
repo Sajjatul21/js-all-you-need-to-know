@@ -21,7 +21,11 @@ postForm.addEventListener('submit', function (e) {
             },
             body: JSON.stringify(postObj)
         })
-            
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+            })
+            .catch(e => console.log(e.message));
     }
     else {
         alert("Please provide Every Details");
